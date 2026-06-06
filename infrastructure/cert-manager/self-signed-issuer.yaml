@@ -1,5 +1,4 @@
 ---
-# Self-signed ClusterIssuer for local development
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
@@ -7,7 +6,6 @@ metadata:
 spec:
   selfSigned: {}
 ---
-# CA Certificate (acts as our own Certificate Authority)
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
@@ -25,7 +23,6 @@ spec:
     kind: ClusterIssuer
     group: cert-manager.io
 ---
-# CA Issuer (uses our CA to sign certificates)
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:

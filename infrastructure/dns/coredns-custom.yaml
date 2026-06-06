@@ -4,7 +4,6 @@ kind: Namespace
 metadata:
   name: dns
 ---
-# Custom DNS server for .k8s.lan domains
 apiVersion: v1
 kind: ConfigMap
 metadata:

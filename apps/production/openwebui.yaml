@@ -32,7 +32,6 @@ spec:
             secretKeyRef:
               name: openwebui-runtime-secret
               key: WEBUI_SECRET_KEY
-        # S3 Storage Configuration
         - name: STORAGE_PROVIDER
           value: "s3"
         - name: ENABLE_S3
@@ -64,7 +63,6 @@ spec:
             secretKeyRef:
               name: openwebui-s3-credentials
               key: S3_REGION_NAME
-        # Force all uploads to S3
         - name: UPLOAD_DIR
           value: "/app/backend/data/uploads"
         - name: DATA_DIR

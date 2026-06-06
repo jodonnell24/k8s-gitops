@@ -1,5 +1,4 @@
 ---
-# Grafana TLS Certificate
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
@@ -13,7 +12,6 @@ spec:
   dnsNames:
     - grafana.k8s.lan
 ---
-# Prometheus TLS Certificate
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
@@ -27,7 +25,6 @@ spec:
   dnsNames:
     - prometheus.k8s.lan
 ---
-# AlertManager TLS Certificate
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
